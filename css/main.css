@@ -1,0 +1,51 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #212121;
+}
+
+.nav {
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  color: #fafafa;
+  font-weight: 500;
+  list-style: none;
+  position: absolute;
+}
+
+.nav > li {
+  padding: 7px;
+}
+
+.main {
+  background-color: rgba(33,33,33,0.6);
+  background-blend-mode: overlay;
+  background-image: url(../assets/pexels-photo-1566837.jpeg);
+  background-position: center;
+  height: 100vh;
+  color: #fafafa;
+}
+
+.footer {
+  position: absolute;
+  color: #fafafa;
+  bottom: 0;
+  font-size: 19px;
+  padding: 16px;
+  padding-right: 3px;
+  width: 90%;
+}
+
+.footer > span {
+  word-spacing: 4px;
+}
+
+.gero {
+  position: absolute;
+  right: 0;
+}
+
+.pizza {
+  width: 99px;
+  height: 99px;
+  fill: #fafafa;
+}
