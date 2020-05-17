@@ -98,6 +98,7 @@ body {
   text-align: center;
 }
 
+
 .pizza-img {
   background-image: url(../assets/lactose-disk-pepperoni.jpeg);
   background-size: contain;
@@ -106,4 +107,12 @@ body {
   height: 200px;
   float: left;
   margin-top: 9px;
+}
+
+#pizza-img-1 {
+  background-image: url(../assets/cheese);
+}
+
+#pizza-img-2 {
+  background-image: url(../assets/weird.jpg);
 }
