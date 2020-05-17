@@ -1,0 +1,109 @@
+.d-none {
+  display: none;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #212121;
+}
+
+.nav {
+  font-family: 'Fira Sans';
+  font-size: 20px;
+  color: #fafafa;
+  font-weight: 500;
+  list-style: none;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.nav > li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main {
+  background-color: rgba(33, 33, 33, 0.6);
+  background-blend-mode: overlay;
+  background-image: url(../assets/pexels-photo-1566837.jpeg);
+  background-position: center;
+  height: 100vh;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.footer {
+  position: absolute;
+  color: #fafafa;
+  bottom: 0;
+  font-size: 19px;
+  padding: 16px;
+  padding-right: 3px;
+  width: 90%;
+}
+
+.footer > span {
+  word-spacing: 4px;
+}
+
+.gero {
+  position: absolute;
+  right: 0;
+}
+
+.container-about {
+  margin: 0 10% 0 10%;
+}
+
+.pizza {
+  width: 99px;
+  height: 99px;
+  fill: #fafafa;
+}
+
+.menu-card {
+  background-color: rgba(255, 255, 255, 1);
+  color: #212121;
+  border-style: solid;
+  border-color: #212121;
+  border-width: thin;
+  padding: 10px;
+  border-radius: 0.1;
+  transition-duration: 1s;
+}
+
+.nutritional-facts {
+  color: #212121;
+  margin: 0;
+}
+
+.nutritional-facts > li {
+  margin: 7px 0 7px 0;
+  list-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  padding: 3px 0 3px 0;
+}
+
+.switch {
+  background: #f05e5e;
+  border-radius: 11px;
+  border-width: thin;
+  border-color: #f05e5e;
+  padding: 5px 15px;
+  margin: 10px 15px 0 0;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 16px/1 "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.pizza-img {
+  background-image: url(../assets/lactose-disk-pepperoni.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 9px;
+}
