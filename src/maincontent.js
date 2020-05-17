@@ -39,7 +39,6 @@ const main_content = `<div class='row d-flex flex-column justify-c-center align-
           <path d="M18.89704,44.85147l0.1606-0.232c0.1572-0.227,0.1006-0.5385-0.1265-0.6958c-0.2285-0.1572-0.5395-0.1006-0.6958,0.1265   l-0.1606,0.2319c-0.1572,0.2271-0.1006,0.5386,0.1265,0.6958C18.42974,45.13587,18.74054,45.07707,18.89704,44.85147z" /></g>
       </svg>
     </div>`;
-
 const land = (() => {
   document.getElementById('mainContent').insertAdjacentHTML('afterbegin', main_content);
 })();
