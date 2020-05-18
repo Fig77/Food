@@ -1,8 +1,3 @@
-const setAbout = () => {
-  document.getElementById('mainContent').innerHTML = '';
-  document.getElementById('mainContent').insertAdjacentHTML('afterbegin', populate);
-};
-
 const populate = `<div class='row d-flex flex-column justify-c-center align-i-center'>
       <h1>Fellow Humans</h1>
       <div class='d-flex flex-column justify-c-center align-i-center container-about'>
@@ -25,6 +20,9 @@ const populate = `<div class='row d-flex flex-column justify-c-center align-i-ce
 <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
    </div>
     `;
-export {
-  setAbout,
+
+const setAbout = () => {
+  document.getElementById('mainContent').innerHTML = '';
+  document.getElementById('mainContent').insertAdjacentHTML('afterbegin', populate);
 };
+export { setAbout as default };

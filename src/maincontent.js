@@ -1,4 +1,4 @@
-const main_content = `<div class='row d-flex flex-column justify-c-center align-i-center' id='landing'>
+const mainContent = `<div class='row d-flex flex-column justify-c-center align-i-center' id='landing'>
       <h1 id='headers-landing-1'>We cook food</h1>
       <h2 id='headers-landing-2'>And you can eat our food</h2>
       <svg class='pizza' id='pizza-icon' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" fill="white" viewBox="0 0 68 70" enable-background="new 0 0 68 68" xml:space="preserve">
@@ -40,5 +40,6 @@ const main_content = `<div class='row d-flex flex-column justify-c-center align-
       </svg>
     </div>`;
 const land = (() => {
-  document.getElementById('mainContent').insertAdjacentHTML('afterbegin', main_content);
+  document.getElementById('mainContent').insertAdjacentHTML('afterbegin', mainContent);
 })();
+export { land as default };

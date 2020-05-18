@@ -50,7 +50,6 @@ const menu = `<div class='row d-flex flex-column justify-c-center align-i-center
     `;
 
 const slide = () => {
-  console.log(document.getElementById(`card-${slideCount}`));
   document.getElementById(`card-${slideCount}`).classList.add('d-none');
   if (slideCount >= 2) {
     slideCount = 0;
@@ -70,6 +69,4 @@ const setMenu = () => {
   menuSlide();
 };
 
-export {
-  setMenu,
-};
+export { setMenu as default };

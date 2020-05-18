@@ -1,7 +1,7 @@
-import _ from 'lodash';
-import { setAbout } from './about.js';
-import { ladning } from './maincontent.js';
-import { setMenu } from './menu.js';
+import _ from 'lodash'; // eslint-disable-line
+import setAbout from './about';
+import './maincontent';
+import setMenu from './menu';
 import './css/main.css';
 
 
