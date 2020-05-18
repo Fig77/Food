@@ -51,7 +51,7 @@ This project was built with:
 
 ### Live Version and Usage
 
-* Live version [here](https://raw.githack.com/Fig77/Food/developer-feature/dist/index.html)
+* Live version [here](https://rawcdn.githack.com/Fig77/Food/e21de2bffe2e8df42c629b9aa2ad43adb281ac36/dist/index.html)
 * Nothing out of ordinary implemented. Nav bar should take you through the 3 sections.
 
 <!-- ROADMAP -->
