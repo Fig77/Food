@@ -7,7 +7,7 @@
   <p align="center">
   	Javascript Project
     <br />
-    <a href="https://github.com/Fig77/Halpin-hand"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Fig77/Food"><strong>Explore the docs »</strong></a>
     <br />
 </p>
 
@@ -40,7 +40,7 @@ This project was built with:
 * SASS (for grid structure)
 
 ### Prerequisites
- The development environment uses `HTML/CSS | JS | Webpack`. Instalation of Webpack is quite necessary for working in development enviroment.
+ The development environment uses `HTML/CSS | JS | Webpack`. Installation of Webpack is quite necessary for working in development enviroment.
   - Webpack - Follow [this guide](https://webpack.js.org/guides/installation/).
   
 ### Installation and setup
@@ -51,7 +51,7 @@ This project was built with:
 
 ### Live Version and Usage
 
-* Live version at  .. 
+* Live version [here](https://raw.githack.com/Fig77/Food/developer-feature/dist/index.html)
 * Nothing out of ordinary implemented. Nav bar should take you through the 3 sections.
 
 <!-- ROADMAP -->
@@ -70,7 +70,7 @@ Project Link: - [Project repo](https://github.com/Fig77/Halpin-hand)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/Contributors-1-brightgreen
-[contributors-url]: https://github.com/Fig77/Gradients-Project/graphs/contributors
+[contributors-url]: https://github.com/Fig77/Food/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
-[issues-url]: https://github.com/Fig77/Halpin-hand/issues
+[issues-url]: https://github.com/Fig77/Food/issues
 [product-screenshot]: assets/menu.png
