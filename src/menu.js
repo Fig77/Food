@@ -1,6 +1,5 @@
 let slideCount = 0;
-const menu =
-  `<div class='row d-flex flex-column justify-c-center align-i-center'>
+const menu = `<div class='row d-flex flex-column justify-c-center align-i-center'>
     
   <div class='d-flex flex-column menu-card justify-c-center align-i-center' id = 'card-0'>
  <h3>Disk with melted lactos and animal sausages</h3>
@@ -72,5 +71,5 @@ const setMenu = () => {
 };
 
 export {
-  setMenu
+  setMenu,
 };
