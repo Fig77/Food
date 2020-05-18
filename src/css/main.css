@@ -30,7 +30,7 @@ body {
 .main {
   background-color: rgba(33, 33, 33, 0.6);
   background-blend-mode: overlay;
-  background-image: url(back);
+  background-image: url(../assets/pexels-photo-1566837.jpeg);
   background-position: center;
   height: 100vh;
   color: #fafafa;
@@ -110,7 +110,7 @@ body {
 
 
 .pizza-img {
-  background-image: url(pep);
+  background-image: url(../assets/lactose-disk-pepperoni.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -120,11 +120,11 @@ body {
 }
 
 #pizza-img-1 {
-  background-image: url(cheese);
+  background-image: url(../assets/cheese.png);
 }
 
 #pizza-img-2 {
-  background-image: url(weird);
+  background-image: url(../assets/weird.jpg);
 }
 
 .cont {

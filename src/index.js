@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './css/main.css';
 import { setAbout } from './about.js';
 import { ladning } from './maincontent.js';
 import { setMenu } from './menu.js';
