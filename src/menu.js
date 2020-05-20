@@ -1,3 +1,4 @@
+const setMenu = (function factory() {
 let slideCount = 0;
 const menu = `<div class='row d-flex flex-column justify-c-center align-i-center'>
     
@@ -63,10 +64,14 @@ const menuSlide = () => {
   document.getElementById('switch').addEventListener('click', slide);
 };
 
-const setMenu = () => {
+const drawMenu = () => {
   document.getElementById('mainContent').innerHTML = '';
   document.getElementById('mainContent').insertAdjacentHTML('afterbegin', menu);
   menuSlide();
 };
 
-export { setMenu as default };
+return { drawMenu };
+
+}());
+
+export default setMenu;
