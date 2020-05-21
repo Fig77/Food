@@ -5,12 +5,10 @@ const sceneManager = (function factory() {
   const clear = () => {
     const contain = document.getElementById('mainContent');
     let i = 3;
-    console.log(contain.childNodes);
     while (i < contain.childNodes.length) {
       contain.removeChild(contain.childNodes[i]);
       i += 1;
     }
-    
   };
 
   function addElement(element) {
@@ -19,7 +17,9 @@ const sceneManager = (function factory() {
     while (twinCounter < element.twinbrothers + 1) {
       let tempElement = document.createElement(element.name);
       tempElement.classList = (element.classlist);
-      tempElement.id = element.identifier + twinCounter;
+      if (element.identifier !== '') {
+        tempElement.id = element.identifier + twinCounter;
+      } 
       tempElement.innerHTML = element.inner;
       dad.appendChild(tempElement);
       twinCounter += 1;

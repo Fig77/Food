@@ -140,6 +140,12 @@ body {
   width: 80%;
 }
 
+/* Quick fix for implementing some changes */
+
+.menu-card {
+  background-color: #fafafa;
+}
+
 
 /* Loader loading.io */
 
