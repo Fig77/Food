@@ -1,20 +1,20 @@
 import './css/main.css';
+import ab from './about'
 import navFooter from './navfooter';
 import mcontent from './maincontent';
-//import sc from './scenemanager';
+import sc from './scenemanager';
 
-navFooter.drawNav();
-mcontent.setLanding();
-navFooter.drawFooter();
+const init = () => {
+  navFooter.drawNav();
+  navFooter.drawFooter();
+  mcontent.setLanding();
+  const nav = document.getElementById('menu-link-1');
+  nav.addEventListener('click', switchAbout);
+};
 
-//<div class='row d-flex flex-column justify-c-center align-i-center' id='landing'>
-// element =  {
-//  string name
-//  string father
-//  string classlist
-//  int twinbrothers
-//  string identifier-#
-//  }
-// <h1 id='headers-landing-1'>We cook food</h1>
-//  <h2 id='headers-landing-2'>And you can eat our food</h2>
+const switchAbout = () => {
+  sc.clear();
+  ab.drawAbout();
+}
 
+init();

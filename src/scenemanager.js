@@ -1,13 +1,22 @@
 const sceneManager = (function factory() {
-  const sceneContainer =  document.createElement('div');
+  const sceneContainer = document.createElement('div');
   sceneContainer.classList.add('scene-container');
-  
-  
-  const addElement = (element) => {
+
+  const clear = () => {
+    const contain = document.getElementById('mainContent');
+    let i = 3;
+    console.log(contain.childNodes);
+    while (i < contain.childNodes.length) {
+      contain.removeChild(contain.childNodes[i]);
+      i += 1;
+    }
+    
+  };
+
+  function addElement(element) {
     const dad = document.getElementById(element.father);
     let twinCounter = 0;
-    console.log(element);
-    while (twinCounter < element.twinbrothers+1) {
+    while (twinCounter < element.twinbrothers + 1) {
       let tempElement = document.createElement(element.name);
       tempElement.classList = (element.classlist);
       tempElement.id = element.identifier + twinCounter;
@@ -16,8 +25,11 @@ const sceneManager = (function factory() {
       twinCounter += 1;
     }
   };
-  
-  return { addElement }
+
+  return {
+    addElement,
+    clear
+  }
 }());
 export default sceneManager;
 // element =  {
