@@ -1,27 +1,52 @@
-const navBar = `<header class='grid-template'>
-    <ul class='row d-flex nav'>
-      <li id='menu-link'>
-        <a href='index.html'>Home</a>
-      </li>
-      <li id='menu-link-0'>
-        Food
-      </li>
-      <li id='menu-link-1'>
-        Menus
-      </li>
-    </ul>
-  </header>
-`;
+import sc from './scenemanager';
+import { github } from './svg';
 
-const fooT = `<footer class='footer d-flex'>
-    <span>Contact: </span>
-    <a href='https://github.com/Fig77/'><span><svg class='gero' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span></a>
-  </footer>
-`;
-
-const setDefault = () => {
-  document.getElementById('mainContent').insertAdjacentHTML('beforebegin', navBar);
-  document.getElementById('mainContent').insertAdjacentHTML('afterend', fooT);
+const setDefault = (() => {
+  
+const header = {name: 'header', father: 'mainContent', 
+                 classlist: 'grid-template row',
+                 twinbrothers: 0, identifier: 'header-', inner: ''};
+const ul = {name: 'ul', father: 'header-0', 
+                 classlist: 'row d-flex nav',
+                 twinbrothers: 0, identifier: 'ul-header-', inner: ''};
+const li = {name: 'li', father: 'ul-header-0', 
+                 classlist: 'row nav',
+                 twinbrothers: 3, identifier: 'menu-link-', inner: ''};
+const elemHeader = [header, ul, li];
+const footer = {name: 'footer', father: 'mainContent', classlist: 'footer d-flex', twinbrothers: 0, identifier: 'footer-', inner: ''};
+const span = {name: 'span', father: 'footer-0', classlist: '', twinbrothers: 0, identifier: 'span-1', inner: 'Contact: '};
+const elemFooter = [footer, span];
+  
+const setNav = () => {
+  let i = 0;
+  while (i < elemHeader.length) {
+    sc.addElement(elemHeader[i]);
+    i += 1;
+  }
+  document.getElementById('menu-link-0').insertAdjacentHTML('afterbegin',`<a href='index.html'>Home</a>`);
+  document.getElementById('menu-link-1').innerHTML = 'Food';
+  document.getElementById('menu-link-2').innerHTML = 'Menus';
 };
+  
+const setFooter = () => {
+  let i = 0;
+  while (i < elemFooter.length) {
+    sc.addElement(elemFooter[i]);
+    i += 1;
+  }
+  document.getElementById('footer-0').insertAdjacentHTML('beforeEnd', github);
+};
+  
+const drawNav = () => {
+  setNav();
+};
+  
+const drawFooter = () => {
+  setFooter();
+};
+
+return {drawNav, drawFooter};
+
+})();
 
 export { setDefault as default };

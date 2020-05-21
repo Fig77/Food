@@ -1,5 +1,11 @@
 import './css/main.css';
-import sc from './scenemanager';
+import navFooter from './navfooter';
+import mcontent from './maincontent';
+//import sc from './scenemanager';
+
+navFooter.drawNav();
+mcontent.setLanding();
+navFooter.drawFooter();
 
 //<div class='row d-flex flex-column justify-c-center align-i-center' id='landing'>
 // element =  {
@@ -11,13 +17,4 @@ import sc from './scenemanager';
 //  }
 // <h1 id='headers-landing-1'>We cook food</h1>
 //  <h2 id='headers-landing-2'>And you can eat our food</h2>
-//
-const setLanding = () => {
-  sc.addElement({name: 'div', father: 'mainContent', 
-                 classlist: 'row d-flex flex-column justify-c-center align-i-center',
-                 twinbrothers: 0, identifier: 'landing-'});
-  
-  
-};
 
-setLanding();

@@ -4,6 +4,11 @@
   display: none;
 }
 
+a, a:link, a:link:active {
+  color: #fafafa;
+  text-decoration: none;
+}
+
 #menu-link > a > link,
 #menu-link > a,
 #menu-link > a > link:visited {
@@ -39,7 +44,7 @@ body {
 }
 
 .footer {
-  position: relative;
+  position: absolute;
   color: #fafafa;
   bottom: 0;
   font-size: 19px;
