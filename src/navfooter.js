@@ -6,15 +6,15 @@ import {
 const setDefault = (() => {
   const header = {
     name: 'header',
-    father: 'mainContent',
+    father: 'body-id',
     classlist: 'grid-template row',
     twinbrothers: 0,
-    identifier: 'header-',
+    identifier: 'head-',
     inner: ''
   };
   const ul = {
     name: 'ul',
-    father: 'header-0',
+    father: 'head-0',
     classlist: 'row d-flex nav',
     twinbrothers: 0,
     identifier: 'ul-header-',
@@ -31,7 +31,7 @@ const setDefault = (() => {
   const elemHeader = [header, ul, li];
   const footer = {
     name: 'footer',
-    father: 'mainContent',
+    father: 'body-id',
     classlist: 'footer d-flex',
     twinbrothers: 0,
     identifier: 'footer-',

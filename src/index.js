@@ -6,13 +6,9 @@ import sc from './scenemanager';
 import men from './menu';
 
 const init = () => {
-  navFooter.drawNav();
-  navFooter.drawFooter();
+  setNavDivs();
   mcontent.setLanding();
-  const nav = document.getElementById('menu-link-1');
-  nav.addEventListener('click', switchAbout);
-  const nav2 = document.getElementById('menu-link-2');
-  nav2.addEventListener('click', switchMenu);
+  
 };
 
 const switchAbout = () => {
@@ -23,6 +19,15 @@ const switchAbout = () => {
 const switchMenu = () => {
   sc.clear();
   men.drawMenuCards();
+};
+
+const setNavDivs = () => {
+  navFooter.drawNav();
+  navFooter.drawFooter();
+  const nav = document.getElementById('menu-link-1');
+  nav.addEventListener('click', switchAbout);
+  const nav2 = document.getElementById('menu-link-2');
+  nav2.addEventListener('click', switchMenu);
 };
 
 init();

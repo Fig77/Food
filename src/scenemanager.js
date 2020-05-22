@@ -4,7 +4,7 @@ const sceneManager = (function factory() {
 
   const clear = () => {
     const contain = document.getElementById('mainContent');
-    let i = 3;
+    let i = 1;
     while (i < contain.childNodes.length) {
       contain.removeChild(contain.childNodes[i]);
       i += 1;

@@ -72,6 +72,7 @@ const setMenu = (function factory() {
   };
 
   const menuCardArr = [divFirst, menuCard];
+  const pics = [picture, picture1, picture2];
 
   const drawMenuCards = () => {
     let i = 0;
@@ -79,9 +80,7 @@ const setMenu = (function factory() {
       sc.addElement(menuCardArr[i]);
       i += 1;
     }
-    sc.addElement(picture);
-    sc.addElement(picture1);
-    sc.addElement(picture2);
+    sc.addElement(pics);
     for (let k = 0; k < 3; k++) {
       ulnutri.father= `menu-card-${k}`;
       ulnutri.identifier = `ulnutri-${k}-`;

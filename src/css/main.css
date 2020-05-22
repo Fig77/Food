@@ -30,7 +30,10 @@ body {
   color: #fafafa;
   font-weight: 500;
   list-style: none;
-  position: relative;
+}
+
+#head-0 {
+  position: absolute;
   top: 0;
 }
 
@@ -40,14 +43,14 @@ body {
 }
 
 .main {
-  min-height: 75vh;
+  min-height: 80vh;
   color: #fafafa;
   font-size: 20px;
+  position: relative;
+  top: 20px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   color: #fafafa;
   font-size: 19px;
   padding: 16px;
