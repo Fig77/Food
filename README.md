@@ -45,7 +45,13 @@ This project was built with:
   
 ### Installation and setup
 1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git>
-2. After that just work as a regular HTML / JS project with your enviroment of choice.
+2. Use the folowwing commands: 
+
+- `$ npm install` For installing dependencies.
+- `$ npm run build` Will build src into dist.
+- `$ npm run dev` Will let --watch working while developing.
+
+3. Work as normal with HTML/CSS - JS editor.
 
 <!-- USAGE EXAMPLES -->
 
