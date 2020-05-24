@@ -48,6 +48,7 @@ body {
   font-size: 20px;
   position: relative;
   top: 20px;
+  justify-items: center;
 }
 
 .footer {
@@ -96,6 +97,7 @@ body {
 .nutritional-facts {
   color: #212121;
   margin: 0;
+  padding-inline-end: 40px;
 }
 
 .nutritional-facts > li {
@@ -104,6 +106,7 @@ body {
   border-bottom-style: solid;
   border-bottom-width: thin;
   padding: 3px 0 3px 0;
+  
 }
 
 .switch {
@@ -121,8 +124,8 @@ body {
 
 
 .pizza-img {
-  background-image: url(../assets/lactose-disk-pepperoni.jpeg);
-  background-size: contain;
+  background-image: url(../assets/lactose-disk-pepperoni.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
@@ -131,11 +134,11 @@ body {
 }
 
 #pizza-img-1 {
-  background-image: url(../assets/cheese.png);
+
 }
 
 #pizza-img-2 {
-  background-image: url(../assets/weird.jpg);
+
 }
 
 .cont {
@@ -165,7 +168,6 @@ body {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: 40px 40px;
 }
-
 .lds-roller div:after {
   content: " ";
   display: block;
@@ -259,9 +261,8 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  footer {
+@media (max-width: 725px) {
+    menu-c {
     flex-direction: column;
   }
-
 }

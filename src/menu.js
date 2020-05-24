@@ -15,11 +15,12 @@ const setMenu = (function factory() {
   const menuCard = {
     name: 'div',
     father: 'div-pizza-0',
-    classlist: 'd-flex menu-card align-i-center',
+    classlist: 'd-flex d-flex-column-sm menu-card align-i-center justify-c-center',
     twinbrothers: 2,
     identifier: 'menu-card-',
     inner: ''
   };
+
   const picture = {
     name: 'div',
     father: 'menu-card-0',
@@ -53,7 +54,7 @@ const setMenu = (function factory() {
     identifier: '',
     inner: ''
   };
-  
+
   const linutri = {
     name: 'li',
     father: '',
@@ -62,7 +63,7 @@ const setMenu = (function factory() {
     identifier: '',
     inner: 'nutrion-item: 4g'
   };
-  
+
   const titleFood = {
     name: 'h3',
     classlist: 'nutritional-facts',
@@ -80,15 +81,18 @@ const setMenu = (function factory() {
       sc.addElement(menuCardArr[i]);
       i += 1;
     }
-    sc.addElement(pics);
     for (let k = 0; k < 3; k++) {
-      ulnutri.father= `menu-card-${k}`;
+      ulnutri.father = `menu-card-${k}`;
       ulnutri.identifier = `ulnutri-${k}-`;
       titleFood.father = `ulnutri-${k}-0`;
-      linutri.father =`ulnutri-${k}-0`;
+      linutri.father = `ulnutri-${k}-0`;
+      sc.addElement(pics[k]);
       sc.addElement(ulnutri);
       sc.addElement(titleFood);
       sc.addElement(linutri);
+      if (k > 0) {
+        document.querySelector(`#menu-card-${k}`).classList.add('d-none');
+      }
     }
   };
 

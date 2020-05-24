@@ -1921,6 +1921,9 @@
   .row-span-md-12 {
     grid-row: span 12; } }
 @media (max-width: 576px) {
+  .d-flex-column-sm {
+    flex-direction: column;
+  }
   .col-sm-1 {
     grid-column: span 1; }
 
@@ -2299,6 +2302,8 @@
 .flex-center {
   justify-content: center;
   align-items: center; }
+
+
 
 .justify-c-center {
   justify-content: center; }
