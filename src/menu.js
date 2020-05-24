@@ -5,15 +5,15 @@ const setMenu = (function factory() {
 
   const clear = () => {
     slideCount = 0;
-  }
-  
+  };
+
   const extraContainer = {
     name: 'div',
     father: 'mainContent',
     classlist: 'row grid-template justify-i-center',
     twinbrothers: 0,
     identifier: 'extraContainer',
-    inner: ''
+    inner: '',
   };
 
   const divFirst = {
@@ -22,7 +22,7 @@ const setMenu = (function factory() {
     classlist: 'row d-flex justify-c-center align-i-center',
     twinbrothers: 0,
     identifier: 'div-pizza-',
-    inner: ''
+    inner: '',
   };
 
   const menuCard = {
@@ -31,7 +31,7 @@ const setMenu = (function factory() {
     classlist: 'd-flex d-flex-column-sm menu-card align-i-center justify-c-center',
     twinbrothers: 2,
     identifier: 'menu-card-',
-    inner: ''
+    inner: '',
   };
 
   const picture = {
@@ -40,7 +40,7 @@ const setMenu = (function factory() {
     classlist: 'pizza-img',
     twinbrothers: 0,
     identifier: '',
-    inner: ''
+    inner: '',
   };
   const picture1 = {
     name: 'div',
@@ -48,7 +48,7 @@ const setMenu = (function factory() {
     classlist: 'pizza-img pizza-1',
     twinbrothers: 0,
     identifier: '',
-    inner: ''
+    inner: '',
   };
   const picture2 = {
     name: 'div',
@@ -56,7 +56,7 @@ const setMenu = (function factory() {
     classlist: 'pizza-img pizza-2',
     twinbrothers: 0,
     identifier: '',
-    inner: ''
+    inner: '',
   };
 
   const ulnutri = {
@@ -65,7 +65,7 @@ const setMenu = (function factory() {
     classlist: 'nutritional-facts',
     twinbrothers: 0,
     identifier: '',
-    inner: ''
+    inner: '',
   };
 
   const linutri = {
@@ -74,7 +74,7 @@ const setMenu = (function factory() {
     classlist: 'nutritional-facts',
     twinbrothers: 3,
     identifier: '',
-    inner: 'nutrion-item: 4g'
+    inner: 'nutrion-item: 4g',
   };
 
   const titleFood = {
@@ -82,7 +82,7 @@ const setMenu = (function factory() {
     classlist: 'nutritional-facts',
     twinbrothers: 0,
     identifier: '',
-    inner: 'Pizza item'
+    inner: 'Pizza item',
   };
 
   const containerButton = {
@@ -105,28 +105,6 @@ const setMenu = (function factory() {
   const menuCardArr = [extraContainer, divFirst, menuCard];
   const pics = [picture, picture1, picture2];
 
-  const drawMenuCards = () => {
-    let i = 0;
-    while (i < menuCardArr.length) {
-      sc.addElement(menuCardArr[i]);
-      i += 1;
-    }
-    for (let k = 0; k < 3; k++) {
-      ulnutri.father = `menu-card-${k}`;
-      ulnutri.identifier = `ulnutri-${k}-`;
-      titleFood.father = `ulnutri-${k}-0`;
-      linutri.father = `ulnutri-${k}-0`;
-      sc.addElement(pics[k]);
-      sc.addElement(ulnutri);
-      sc.addElement(titleFood);
-      sc.addElement(linutri);
-      if (k > 0) {
-        document.querySelector(`#menu-card-${k}`).classList.add('d-none');
-      }
-    }
-    menuSlide();
-  };
-
   // menu slide
   const slide = () => {
     document.getElementById(`menu-card-${slideCount}`).classList.add('d-none');
@@ -147,11 +125,32 @@ const setMenu = (function factory() {
   };
   // menu slide
 
+  const drawMenuCards = () => {
+    let i = 0;
+    while (i < menuCardArr.length) {
+      sc.addElement(menuCardArr[i]);
+      i += 1;
+    }
+    for (let k = 0; k < 3; k += 1) {
+      ulnutri.father = `menu-card-${k}`;
+      ulnutri.identifier = `ulnutri-${k}-`;
+      titleFood.father = `ulnutri-${k}-0`;
+      linutri.father = `ulnutri-${k}-0`;
+      sc.addElement(pics[k]);
+      sc.addElement(ulnutri);
+      sc.addElement(titleFood);
+      sc.addElement(linutri);
+      if (k > 0) {
+        document.querySelector(`#menu-card-${k}`).classList.add('d-none');
+      }
+    }
+    menuSlide();
+  };
+
   return {
     drawMenuCards,
     clear,
   };
-
 }());
 
 export default setMenu;

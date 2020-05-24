@@ -1,6 +1,6 @@
 import sc from './scenemanager';
 import {
-  github
+  github,
 } from './svg';
 
 const setDefault = (() => {
@@ -10,7 +10,7 @@ const setDefault = (() => {
     classlist: 'grid-template row',
     twinbrothers: 0,
     identifier: 'head-',
-    inner: ''
+    inner: '',
   };
   const ul = {
     name: 'ul',
@@ -18,7 +18,7 @@ const setDefault = (() => {
     classlist: 'row d-flex nav',
     twinbrothers: 0,
     identifier: 'ul-header-',
-    inner: ''
+    inner: '',
   };
   const li = {
     name: 'li',
@@ -26,7 +26,7 @@ const setDefault = (() => {
     classlist: 'row nav',
     twinbrothers: 3,
     identifier: 'menu-link-',
-    inner: ''
+    inner: '',
   };
   const elemHeader = [header, ul, li];
   const footer = {
@@ -35,7 +35,7 @@ const setDefault = (() => {
     classlist: 'footer d-flex',
     twinbrothers: 0,
     identifier: 'footer-',
-    inner: ''
+    inner: '',
   };
   const span = {
     name: 'span',
@@ -43,7 +43,7 @@ const setDefault = (() => {
     classlist: '',
     twinbrothers: 0,
     identifier: 'span-1',
-    inner: 'Contact: '
+    inner: 'Contact: ',
   };
 
   const elemFooter = [footer, span];
@@ -53,7 +53,7 @@ const setDefault = (() => {
       sc.addElement(elemHeader[i]);
       i += 1;
     }
-    document.getElementById('menu-link-0').insertAdjacentHTML('afterbegin', `<a href='index.html'>Home</a>`);
+    document.getElementById('menu-link-0').insertAdjacentHTML('afterbegin', '<a href=\'index.html\'>Home</a>');
     document.getElementById('menu-link-1').innerHTML = 'Food';
     document.getElementById('menu-link-2').innerHTML = 'Menus';
   };
@@ -77,12 +77,11 @@ const setDefault = (() => {
 
   return {
     drawNav,
-    drawFooter
+    drawFooter,
   };
-
 })();
 
 export {
   setDefault as
-  default
+  default,
 };

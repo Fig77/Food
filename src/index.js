@@ -1,15 +1,9 @@
 import './css/main.css';
-import ab from './about'
+import ab from './about';
 import navFooter from './navfooter';
 import mcontent from './maincontent';
 import sc from './scenemanager';
 import men from './menu';
-
-const init = () => {
-  setNavDivs();
-  mcontent.setLanding();
-  
-};
 
 const switchAbout = () => {
   sc.clear();
@@ -29,6 +23,11 @@ const setNavDivs = () => {
   nav.addEventListener('click', switchAbout);
   const nav2 = document.getElementById('menu-link-2');
   nav2.addEventListener('click', switchMenu);
+};
+
+const init = () => {
+  mcontent.setLanding();
+  setNavDivs();
 };
 
 init();
