@@ -4,7 +4,9 @@
   display: none;
 }
 
-a, a:link, a:link:active {
+a,
+a:link,
+a:link:active {
   color: #fafafa;
   text-decoration: none;
 }
@@ -89,7 +91,7 @@ body {
   border-style: solid;
   border-color: #212121;
   border-width: thin;
-  padding: 10px;
+  margin-top: 25px;
   border-radius: 0.1;
   transition-duration: 1s;
 }
@@ -106,7 +108,7 @@ body {
   border-bottom-style: solid;
   border-bottom-width: thin;
   padding: 3px 0 3px 0;
-  
+
 }
 
 .switch {
@@ -133,12 +135,12 @@ body {
   margin-top: 9px;
 }
 
-#pizza-img-1 {
-
+.pizza-1 {
+  background-image: url(../assets/pexels-photo-1566837.jpeg);
 }
 
-#pizza-img-2 {
-
+.pizza-2 {
+  background-image: url(../assets/almuerzo-carne-cena-circulo-803290.jpg);
 }
 
 .cont {
@@ -168,6 +170,7 @@ body {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: 40px 40px;
 }
+
 .lds-roller div:after {
   content: " ";
   display: block;
@@ -262,7 +265,7 @@ body {
 }
 
 @media (max-width: 725px) {
-    menu-c {
+  menu-c {
     flex-direction: column;
   }
 }

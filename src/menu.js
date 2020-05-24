@@ -3,6 +3,10 @@ import sc from './scenemanager';
 const setMenu = (function factory() {
   let slideCount = 0;
 
+  const clear = () => {
+    slideCount = 0;
+  }
+
   const divFirst = {
     name: 'div',
     father: 'mainContent',
@@ -32,7 +36,7 @@ const setMenu = (function factory() {
   const picture1 = {
     name: 'div',
     father: 'menu-card-1',
-    classlist: 'pizza-img',
+    classlist: 'pizza-img pizza-1',
     twinbrothers: 0,
     identifier: '',
     inner: ''
@@ -40,7 +44,7 @@ const setMenu = (function factory() {
   const picture2 = {
     name: 'div',
     father: 'menu-card-2',
-    classlist: 'pizza-img',
+    classlist: 'pizza-img pizza-2',
     twinbrothers: 0,
     identifier: '',
     inner: ''
@@ -72,6 +76,23 @@ const setMenu = (function factory() {
     inner: 'Pizza item'
   };
 
+  const containerButton = {
+    name: 'div',
+    father: 'mainContent',
+    classlist: 'd-flex row',
+    twinbrothers: 0,
+    identifier: 'containerButton',
+    inner: '',
+  };
+
+  const button = {
+    name: 'button',
+    father: 'containerButton0',
+    classlist: 'switch',
+    twinbrothers: 1,
+    identifier: 'but-',
+    inner: '',
+  };
   const menuCardArr = [divFirst, menuCard];
   const pics = [picture, picture1, picture2];
 
@@ -94,10 +115,32 @@ const setMenu = (function factory() {
         document.querySelector(`#menu-card-${k}`).classList.add('d-none');
       }
     }
+    menuSlide();
   };
+
+  // menu slide
+  const slide = () => {
+    document.getElementById(`menu-card-${slideCount}`).classList.add('d-none');
+    if (slideCount >= 2) {
+      slideCount = 0;
+    } else {
+      slideCount += 1;
+    }
+    document.getElementById(`menu-card-${slideCount}`).classList.remove('d-none');
+  };
+
+  const menuSlide = () => {
+    sc.addElement(containerButton);
+    sc.addElement(button);
+    document.getElementById('but-0').innerHTML = 'Order';
+    document.getElementById('but-1').innerHTML = 'Next';
+    document.getElementById('but-1').addEventListener('click', slide);
+  };
+  // menu slide
 
   return {
     drawMenuCards,
+    clear,
   };
 
 }());

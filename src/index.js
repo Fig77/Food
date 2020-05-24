@@ -18,6 +18,7 @@ const switchAbout = () => {
 
 const switchMenu = () => {
   sc.clear();
+  men.clear();
   men.drawMenuCards();
 };
 
