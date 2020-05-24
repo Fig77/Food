@@ -44,7 +44,7 @@ This project was built with:
   - Webpack - Follow [this guide](https://webpack.js.org/guides/installation/).
   
 ### Installation and setup
-1. You can download the zip project clicking [here](https://github.com/Fig77/Halpin-hand.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Halpin-hand.git>
+1. You can download the zip project clicking [here](https://github.com/Fig77/Food.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Food.git>
 2. Use the folowwing commands: 
 
 - `$ npm install` For installing dependencies.
@@ -53,25 +53,23 @@ This project was built with:
 
 3. Work as normal with HTML/CSS - JS editor.
 
-<!-- USAGE EXAMPLES -->
-
 ### Live Version and Usage
 
-* Live version [here](https://rawcdn.githack.com/Fig77/Food/e21de2bffe2e8df42c629b9aa2ad43adb281ac36/dist/index.html)
+* Live version [here](https://fig77.github.io/Food/index.html)
 * Nothing out of ordinary implemented. Nav bar should take you through the 3 sections.
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues ](https://github.com/Fig77/Halpin-hand/issues)for a list of proposed features (and known issues).
+See the [open issues ](https://github.com/Fig77/Food/issues)for a list of proposed features (and known issues).
 
 <!-- CONTACT -->
 ## Contact
 
 Facundo Iglesias - [Github profile](https://github.com/Fig77)
 
-Project Link: - [Project repo](https://github.com/Fig77/Halpin-hand)
+Project Link: - [Project repo](https://github.com/Fig77/Food)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
