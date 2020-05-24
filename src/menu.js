@@ -6,10 +6,19 @@ const setMenu = (function factory() {
   const clear = () => {
     slideCount = 0;
   }
+  
+  const extraContainer = {
+    name: 'div',
+    father: 'mainContent',
+    classlist: 'row grid-template justify-i-center',
+    twinbrothers: 0,
+    identifier: 'extraContainer',
+    inner: ''
+  };
 
   const divFirst = {
     name: 'div',
-    father: 'mainContent',
+    father: 'extraContainer0',
     classlist: 'row d-flex justify-c-center align-i-center',
     twinbrothers: 0,
     identifier: 'div-pizza-',
@@ -78,7 +87,7 @@ const setMenu = (function factory() {
 
   const containerButton = {
     name: 'div',
-    father: 'mainContent',
+    father: 'extraContainer0',
     classlist: 'd-flex row',
     twinbrothers: 0,
     identifier: 'containerButton',
@@ -93,7 +102,7 @@ const setMenu = (function factory() {
     identifier: 'but-',
     inner: '',
   };
-  const menuCardArr = [divFirst, menuCard];
+  const menuCardArr = [extraContainer, divFirst, menuCard];
   const pics = [picture, picture1, picture2];
 
   const drawMenuCards = () => {

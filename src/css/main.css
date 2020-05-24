@@ -4,6 +4,10 @@
   display: none;
 }
 
+.justify-i-center {
+  justify-items: center;
+}
+
 a,
 a:link,
 a:link:active {
@@ -99,7 +103,8 @@ body {
 .nutritional-facts {
   color: #212121;
   margin: 0;
-  padding-inline-end: 40px;
+  padding-inline-start: 3px !important;
+  padding-inline-end: 3px;
 }
 
 .nutritional-facts > li {
