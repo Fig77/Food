@@ -30,10 +30,3 @@ const sceneManager = (function factory() {
   };
 }());
 export default sceneManager;
-// element =  {
-//  string name
-//  string father
-//  string classlist
-//  int twinbrothers
-//  string identifier-#
-//  }
