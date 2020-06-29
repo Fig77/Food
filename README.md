@@ -5,7 +5,7 @@
   <img src="rest.png" alt="menu" width="718" height="394">
   <h2 align="center">🍕 Restaurant App 🍕</h2>
   <p align="center">
-  	Javascript Project
+  	JavaScript Project
     <br />
     <a href="https://github.com/Fig77/Food"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,11 +30,11 @@
 Project is a simple restaurant web app with a landing, small menu, and about section.
 
 ### Objective
-Main objective of project is to put into use concepts of ES6, Webpack and modularized code, by doing a small restaurant web-app.
+The main objective of this project is to put into use concepts of ES6, Webpack, and modularized code, by doing a small restaurant web-app.
 
 ### Built With
 This project was built with: 
-* Javascript
+* JavaScript
 * ESlint
 * Webpack
 * SASS (for grid structure)
@@ -45,7 +45,7 @@ This project was built with:
   
 ### Installation and setup
 1. You can download the zip project clicking [here](https://github.com/Fig77/Food.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Food.git>
-2. Use the folowwing commands: 
+2. Use the following commands: 
 
 - `$ npm install` For installing dependencies.
 - `$ npm run build` Will build src into dist.
@@ -56,7 +56,7 @@ This project was built with:
 ### Live Version and Usage
 
 * Live version [here](https://fig77.github.io/Food/index.html)
-* Nothing out of ordinary implemented. Nav bar should take you through the 3 sections.
+* Nothing out of ordinary implemented. Navbar should take you through the 3 sections.
 
 <!-- ROADMAP -->
 
