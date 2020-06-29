@@ -30,7 +30,7 @@
 Project is a simple restaurant web app with a landing, small menu, and about section.
 
 ### Objective
-Main objective of project is to put into use concepts of ES6, Webpack and modularized code.
+Main objective of project is to put into use concepts of ES6, Webpack and modularized code, by doing a small restaurant web-app.
 
 ### Built With
 This project was built with: 
