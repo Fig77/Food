@@ -38,3 +38,44 @@ This project was built with:
 * ESlint
 * Webpack
 * SASS (for grid structure)
+
+### Prerequisites
+ The development environment uses `HTML/CSS | JS | Webpack`. Installation of Webpack is quite necessary for working in development enviroment.
+  - Webpack - Follow [this guide](https://webpack.js.org/guides/installation/).
+  
+### Installation and setup
+1. You can download the zip project clicking [here](https://github.com/Fig77/Food.git) or you can clone the project using the command - git clone <https://github.com/Fig77/Food.git>
+2. Use the following commands: 
+
+- `$ npm install` For installing dependencies.
+- `$ npm run build` Will build src into dist.
+- `$ npm run dev` Will let --watch working while developing.
+
+3. Work as normal with HTML/CSS - JS editor.
+
+### Live Version and Usage
+
+* Live version [here](https://fig77.github.io/Food/index.html)
+* Nothing out of ordinary implemented. Navbar should take you through the 3 sections.
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues ](https://github.com/Fig77/Food/issues)for a list of proposed features (and known issues).
+
+<!-- CONTACT -->
+## Contact
+
+Facundo Iglesias - [Github profile](https://github.com/Fig77)
+
+Project Link: - [Project repo](https://github.com/Fig77/Food)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/badge/Contributors-1-brightgreen
+[contributors-url]: https://github.com/Fig77/Food/graphs/contributors
+[issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
+[issues-url]: https://github.com/Fig77/Food/issues
+[product-screenshot]: assets/menu.png
+
