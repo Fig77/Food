@@ -3,11 +3,11 @@
 <br />
 <p align="center">
   <img src="rest.png" alt="menu" width="718" height="394">
-  <h2 align="center">Weather App</h2>
+  <h2 align="center">🍕 Restaurant App 🍕</h2>
   <p align="center">
   	JavaScript Project
     <br />
-    <a href="https://github.com/Fig77/weather-ap"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Fig77/Food"><strong>Explore the docs »</strong></a>
     <br />
 </p>
 
@@ -27,11 +27,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 
-The project is a simple web app that should display information about the weather of a given input. Requirements can be seen
-[here](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
+Project is a simple restaurant web app with a landing, small menu, and about section.
 
 ### Objective
-The main objective of this project is to put into use concepts of ES6, Webpack, and working with API using JavaScript.
+The main objective of this project is to put into use concepts of ES6, Webpack, and modularized code, by doing a small restaurant web-app.
 
 ### Built With
 This project was built with: 
@@ -39,49 +38,3 @@ This project was built with:
 * ESlint
 * Webpack
 * SASS (for grid structure)
-* HTML/CSS
-* Open weather API
-
-### Prerequisites
- The development environment uses `HTML/CSS | JS | Webpack`. Installation of Webpack is quite necessary for working in development enviroment.
-  - Webpack - Follow [this guide](https://webpack.js.org/guides/installation/).
-  
-### Installation and setup
-1. You can download the zip project clicking [here](https://github.com/Fig77/weather-ap.git) or you can clone the project using the command - git clone <https://github.com/Fig77/weather-ap.git>
-2. Use the following commands: 
-
-- `$ npm install` For installing dependencies.
-- `$ npm run build` Will build src into dist.
-- `$ npm run dev` Will let --watch working while developing.
-
-3. Work as normal with HTML/CSS - JS editor.
-
-### Live Version and Usage
-
-* Current live version [here](https://fig77.github.io/weather-api/)
-* Write a location in the search bar, and press "enter" or click the search icon.
-* Input can take several formats, but the one recommended is 'City, Country'.
-* You can switch from Celsius to Fahrenheit by clicking the switch button below. No need to redo the search.
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues ](https://github.com/Fig77/weather-ap/issues)for a list of proposed features (and known issues).
-
-<!-- CONTACT -->
-## Contact
-
-Facundo Iglesias - [Github profile](https://github.com/Fig77)
-
-Project Link: - [Project repo](https://github.com/Fig77/weather-ap)
-
-Email: <strong>fig.igle@gmail.com</strong>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/badge/Contributors-1-brightgreen
-[contributors-url]: https://github.com/Fig77/weather-ap/graphs/contributors
-[issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
-[issues-url]: https://github.com/Fig77/weather-ap/issues
-[product-screenshot]: assets/menu.png
