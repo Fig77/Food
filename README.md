@@ -11,20 +11,6 @@
     <br />
 </p>
 
-
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Installation](#installation-and-setup)
-	* [Requirements](#perquisites)
-* [Live Version](#live-version-and-usage)
-* [Roadmap](#roadmap)
-* [License](#license)
-* [Contact](#contact)
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project 
 Project is a simple restaurant web app with a landing, small menu, and about section.
@@ -60,7 +46,7 @@ This project was built with:
 
 <!-- ROADMAP -->
 
-## Roadmap
+## Future Improvements
 
 See the [open issues ](https://github.com/Fig77/Food/issues)for a list of proposed features (and known issues).
 
